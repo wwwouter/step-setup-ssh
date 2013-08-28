@@ -1,0 +1,16 @@
+name: setup-ssh
+version: 0.0.1
+description: Setup ssh connection details for wouter/script-ssh
+keywords:
+  - ssh
+properties:
+  private-key:
+    type: string
+    required: true
+  username:
+    type: string
+    required: true
+  host:
+    type: string
+    required: true
+  
