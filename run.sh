@@ -1,3 +1,8 @@
+if [[ "$WERCKER_SETUP_SSH_PRIVATE_KEY" == "" ]] ; then
+  error "private key is an empty string, please check"
+  exit 1
+fi
+
 #save public key
 export WERCKER_SETUP_SSH_ID_FILE=$WERCKER_STEP_TEMP/id.key
 echo -e "$WERCKER_SETUP_SSH_PRIVATE_KEY" > "$WERCKER_SETUP_SSH_ID_FILE"
