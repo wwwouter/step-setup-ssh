@@ -16,6 +16,7 @@ if [ $exitCode != "0" ] ; then
   exit 1
 else
   info "check is ok $exitCode"
+  echo "$result"
 fi
   
 
