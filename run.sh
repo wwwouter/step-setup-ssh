@@ -14,6 +14,8 @@ if [ $exitCode != "0" ] ; then
   error "Could not connect"
   $WERCKER_SSH -v echo 1
   exit 1
+else
+  info "check is ok $exitCode"
 fi
   
 
