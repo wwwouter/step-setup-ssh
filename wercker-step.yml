@@ -1,5 +1,5 @@
 name: setup-ssh
-version: 0.0.1
+version: 0.0.2
 description: Setup ssh connection details for wouter/script-ssh
 keywords:
   - ssh
