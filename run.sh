@@ -7,4 +7,4 @@ chmod 0700 "$WERCKER_SETUP_SSH_ID_FILE"
 
 export WERCKER_SSH="ssh $WERCKER_SETUP_SSH_HOST -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l $WERCKER_SETUP_SSH_USERNAME -i $WERCKER_SETUP_SSH_ID_FILE
 
-success "Created WERCKER_SHH : $WERCKER_SSH"
+success "Created WERCKER_SHH $WERCKER_SSH"
