@@ -14,7 +14,7 @@ export WERCKER_SSH="ssh $WERCKER_SETUP_SSH_HOST -t -o UserKnownHostsFile=/dev/nu
 
 $WERCKER_SSH echo 1 &> /dev/null || failed=true
 
-if [ $failed == "true" ] ; then
+if [ "$failed" == "true" ] ; then
   error "Could not connect"
   $WERCKER_SSH -v echo 1
   exit 1
